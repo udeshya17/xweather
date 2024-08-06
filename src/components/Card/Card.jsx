@@ -1,8 +1,8 @@
-import styles from './Card.module.css';
+import './Card.css';
 
 function Card({heading, weatherData}) {
     return (
-        <div className={styles.card}>
+        <div className='weather-card'>
             <h3>{heading}</h3>
             <p>{weatherData}</p>
         </div>

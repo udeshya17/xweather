@@ -53,6 +53,7 @@ function App() {
       <div className='home'>
         <form className='form' onSubmit={handleSubmit}>
           <input 
+            type='text'
             className='input' 
             placeholder='Enter city name' 
             value={cityName}
@@ -63,7 +64,7 @@ function App() {
       </div>
       {loading && <p style={{textAlign:'center'}}>Loading data...</p>}
       {dataFetched && !loading && !hasError && (
-        <div className='cards'>
+        <div className='weather-cards'>
           <Card heading={"Temperature"} weatherData={`${temperature}°C`} />
           <Card heading={"Humidity"} weatherData={`${humidity}%`} />
           <Card heading={"Condition"} weatherData={condition} />

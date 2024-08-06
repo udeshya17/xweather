@@ -27,7 +27,7 @@ body {
     border-radius: 3px;
 }
 
-.cards {
+.weather-cards {
     padding-top: 20px;
     display: flex;
     justify-content: center;
