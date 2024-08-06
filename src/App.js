@@ -64,10 +64,10 @@ function App() {
       {loading && <p style={{textAlign:'center'}}>Loading data...</p>}
       {dataFetched && !loading && !hasError && (
         <div className='cards'>
-          <Card heading={"Temperature"} weatherData={temperature} />
-          <Card heading={"Humidity"} weatherData={humidity} />
+          <Card heading={"Temperature"} weatherData={`${temperature}°C`} />
+          <Card heading={"Humidity"} weatherData={`${humidity}%`} />
           <Card heading={"Condition"} weatherData={condition} />
-          <Card heading={"Wind Speed"} weatherData={windSpeed} />
+          <Card heading={"Wind Speed"} weatherData={`${windSpeed} kph`} />
         </div>
       )}
     </div>
